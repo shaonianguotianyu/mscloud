@@ -1,0 +1,9 @@
+
+.gitignore
+.idea/vcs.xml
+.idea/workspace.xml
+cloud-consumer-order80/src/test/
+cloud-consumer-order80/target/
+cloud-provider-payment8001/src/test/
+cloud-provider-payment8001/target/
+src/
