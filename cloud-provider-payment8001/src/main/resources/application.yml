@@ -1,0 +1,24 @@
+server:
+  port: 8001
+
+spring:
+  application:
+    name: cloud-payment-service
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
+    driver-class-name: org.gjt.mm.mysql.Driver              # mysql驱动包
+#    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:mysql://127.0.0.1:3306/cloud01
+#    url: jdbc:oracle:thin:@localhost:1521:GTYDATEBASE
+    username: root
+    password: 123456
+
+mybatis:
+  mapperLocations: classpath:mapper/*.xml
+  type-aliases-package: com.atguigu.springcloud.entities   # 所有Entity别名类所在包
+
+
+eureka:
+  client:
+    register-with-eureka: false   #是否将自己注册到Eureka Server上，默认为true
+    fetch-registry: false     #是否从Eureka Server上获取注册信息，默认为true
